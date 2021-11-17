@@ -20,7 +20,6 @@ public class PlayerMovement : MonoBehaviour
     private void FixedUpdate()
     {
         ApplyMovement(DirectionVelocity, Speed);
-        
     }
 
     public void GetDirection()
@@ -33,5 +32,9 @@ public class PlayerMovement : MonoBehaviour
         Rigidbody.velocity = (direction) * speed * Time.deltaTime;
     }
 
-   
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = Color.cyan;
+        Gizmos.DrawWireSphere(transform.position, 15);
+    }
 }
