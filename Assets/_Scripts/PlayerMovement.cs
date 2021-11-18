@@ -29,7 +29,7 @@ public class PlayerMovement : MonoBehaviour
 
     public void ApplyMovement(Vector3 direction, float speed)
     {
-        Rigidbody.velocity = (direction) * speed * Time.deltaTime;
+        Rigidbody.velocity = new Vector3(direction.x * speed * Time.deltaTime, Rigidbody.velocity.y, direction.z * speed * Time.deltaTime);
     }
 
     private void OnDrawGizmos()

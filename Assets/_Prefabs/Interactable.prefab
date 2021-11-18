@@ -64,7 +64,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   outline: {fileID: 6539204541911393066}
-  ThrowSpeed: 700
+  ThrowSpeed: 400
   isDragged: 0
   infoSprite: {fileID: 8331597824311295004}
   Rigidbody: {fileID: 1917056790}
